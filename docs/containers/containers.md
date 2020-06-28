@@ -1,8 +1,8 @@
 ---
 layout: page
-nav_order: 1
+nav_order: 2
 title: Containers
 has_children: true
-permalink: /docs/containers
+permalink: /containers
 ---
 # Containers
