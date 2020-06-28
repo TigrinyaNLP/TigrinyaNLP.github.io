@@ -1,7 +1,7 @@
 ---
 layout: page
 title: References
-permalink: /references
+permalink: /docs/references
 ---
 # References
 {: .no_toc }
