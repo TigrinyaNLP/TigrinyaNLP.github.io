@@ -8,5 +8,22 @@ nav_order: 1
 description: "Home"
 permalink: /
 ---
-# Tigrinya NLP!
-We are all familiar with spelling checks, speech recognition and optical character recognition (OCR) Technologies. We know how useful they are. Unfortunately they are not readily available for minority languages like Tigrinya. Many companies focus on the financial gain when supporting new language in their product. The odds are not in favor of Tigrinya in this regard. The good news is that, the majority of these preparatory products are built on top of an open source engine. And these open source technologies are customizable for any language. With a bit of creativity and hard work, Tigrinya can also be the beneficiary of these technologies. Most importantly, successful adoption of these technologies highly depends on the quality of the corpus.
+
+# Natural Language Processing for Tigrinya
+{: .fs-9 }
+
+Improve the coverage of Tigrinya Language in the digital world.
+{: .fs-6 .fw-300 }
+---
+We are all familiar with spelling checks, speech recognition, optical character recognition (OCR) and other Technologies.
+We know how useful they are in our daily life. Unfortunately they are not readily available for minority languages like Tigrinya.
+
+Relying on commercial companies like Google, Microsoft for this type of services in Tigrinya might be a long wait.
+Tigrinya may not have the financial gain that this companies are looking for yet.
+
+The good news is that, the majority of these products are built on top of an open source engine.
+And these open source technologies are customizable for any language. With a bit of creativity and hard work,
+Tigrinya can also be the beneficiary of these technologies.
+
+This page is an initiative by Daniel network, language team to explore,customize and build existing NLP technology
+ for Tigrinya Language.
