@@ -1,2 +1,2 @@
 # tigrinyanlp.github.io
-Website on Tigrinya NLP
+Website on [Tigrinya NLP](https://tigrinyanlp.github.io/).
