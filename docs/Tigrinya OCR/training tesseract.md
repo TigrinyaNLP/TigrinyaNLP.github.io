@@ -30,13 +30,17 @@ This will produce a file called tir.Abyssinica_SIL.exp1.box
 
 Open the box file using QT Box Editor. You should see something like the image below.
 
-![Box file before editing](/img/qt1.png)
+| ![Box file before editing](/img/qt1.png) |
+|:--:|
+| *Box file before editing* |
 
 The editor show all the Letters on the left side. Each letter has its own box (defined by the left, bottom, right and bottom coordinates).
 On the right side the image is displayed along with the box in green border. In this example we can see that ዕ,ራ,ፍ are correctly identified, however ም is recognized as ዖ and o.
 We can correct this by removing the box that has ‘o’, replacing ዖ with ም and stretching the first box to cover the entire ም as shown below.
 
-![Box file after editing](/img/qt2.png)
+| ![Box file after editing](/img/qt2.png) |
+|:--:|
+| *Box file after editing* |
 
 
 By doing this, we are preparing a training file for Tesseract, next time tesseract finds an image that looks like this, it will convert it to ም instead of ዖo.
