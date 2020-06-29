@@ -25,5 +25,5 @@ The good news is that, the majority of these products are built on top of an ope
 And these open source technologies are customizable for any language. With a bit of creativity and hard work,
 Tigrinya can also be the beneficiary of these technologies.
 
-This page is an initiative by Daniel network, language team to explore,customize and build existing NLP technology
+This page is an initiative by Daniel network, language team to explore,customize and build existing NLP technologies
  for Tigrinya Language.
