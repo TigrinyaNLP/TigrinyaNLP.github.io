@@ -1,7 +1,8 @@
 ---
-layout: default
-title: Continuous Delivery
-parent: Automation
-nav_order: 1
+layout: page
+nav_order: 2
+title: OCR
+has_children: true
+permalink: /ocr/run_tesseract
 ---
-# Continuous Delivery
+# Running Tesseract for Tigrinya OCR

@@ -1,7 +1,10 @@
 ---
-layout: default
-title: Kubernetes
-parent: Containers
+layout: page
 nav_order: 2
+title: Software
+has_children: true
+permalink: /software
 ---
-# Kubernetes
+# Software and Mobile Apps Specific to Tigrinya NLP
+
+TBD

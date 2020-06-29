@@ -1,9 +1,9 @@
 ---
 layout: page
 nav_order: 3
-title: Automation
+title: OCR
 has_children: true
-permalink: /automation
+permalink: /ocr/intro
 ---
 # Tigrinya OCR
 

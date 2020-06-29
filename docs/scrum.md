@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /docs/about
+title: Scram
+permalink: /docs/scrum
 ---
 # Scram Board
 

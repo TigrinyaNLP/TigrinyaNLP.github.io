@@ -1,7 +1,10 @@
 ---
-layout: default
-title: Docker
-parent: Containers
-nav_order: 1
+layout: page
+nav_order: 2
+title: Research
+has_children: false
+permalink: /research
 ---
-# Docker
+# Tigrinya NLP research
+
+TBD
