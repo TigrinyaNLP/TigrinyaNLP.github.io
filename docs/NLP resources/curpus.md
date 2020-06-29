@@ -5,7 +5,7 @@ parent: NLP resources
 nav_order: 1
 ---
 # Tigrinya Corpus
-
+---
 ## Corpus Building
 
 [Corpus](https://en.wikipedia.org/wiki/Corpus_linguistics) may have a broader meaning in Linguists study. For the purpose of this document, Corpus is a complete list of words/phrases of a language that adheres to the morphological structure (grammatical syntax) of that language.  Most Language technologies are based on machine learning algorithms. Knowing the spelling of the words and their derivation helps navigating the learning algorithms to the right learning path.

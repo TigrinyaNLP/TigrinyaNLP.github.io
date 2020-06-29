@@ -5,7 +5,7 @@ parent: Tigrinya OCR
 nav_order: 3
 ---
 # Training Tesseract for Tigrinya
---
+---
 As discussed earlier the Tigrinya language-package that comes with Tesseract is descent. People can still use it AS IS with a bit of manual correction, you can have your scanned image into an editable format.
  However for bigger documents, where you can not manually correct each page one by one. Such approach is not feasible. A more practical and permanent solution is to train Tesseract with more sample documents and
  make it recognize Tigrinya characters more accurately.
@@ -30,12 +30,18 @@ This will produce a file called tir.Abyssinica_SIL.exp1.box
 
 Open the box file using QT Box Editor. You should see something like the image below.
 
+![Box file before editing](/img/qt1.png)
+
 The editor show all the Letters on the left side. Each letter has its own box (defined by the left, bottom, right and bottom coordinates).
 On the right side the image is displayed along with the box in green border. In this example we can see that ዕ,ራ,ፍ are correctly identified, however ም is recognized as ዖ and o.
 We can correct this by removing the box that has ‘o’, replacing ዖ with ም and stretching the first box to cover the entire ም as shown below.
-By doing this, we are preparing a training file for Tesseract, next time tesseract finds an image that looks like this, it will convert it to ም instead of ዖo. We will see on the next section how to train Tesseract.
-It is now time to feed the modified box file to Tesseract and generated new tir.tessdata which will be out new ‘improved’ language definition for Tigrinya.
-First lets generate a character set definition and shape table.
+
+![Box file after editing](/img/qt2.png)
+
+
+By doing this, we are preparing a training file for Tesseract, next time tesseract finds an image that looks like this, it will convert it to ም instead of ዖo.
+It is now time to feed the modified box file back to Tesseract and generate few more files.
+ First lets generate a character set definition and shape table.
 
 ## Generating training files
 
