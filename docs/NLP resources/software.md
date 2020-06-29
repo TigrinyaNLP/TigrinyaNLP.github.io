@@ -1,9 +1,8 @@
 ---
-layout: page
-nav_order: 2
+layout: default
 title: Software
-has_children: true
-permalink: /software
+parent: NLP resources
+nav_order: 1
 ---
 # Software and Mobile Apps Specific to Tigrinya NLP
 

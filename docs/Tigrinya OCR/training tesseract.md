@@ -1,8 +1,7 @@
 ---
-layout: page
-nav_order: 2
-title: OCR
-has_children: true
-permalink: /ocr/train_tesseract
+layout: default
+title: Training Tesseract
+parent: Tigrinya OCR
+nav_order: 1
 ---
 # Training Tesseract for Tigrinya OCR

@@ -1,8 +1,7 @@
 ---
-layout: page
-nav_order: 2
-title: OCR
-has_children: true
-permalink: /ocr/run_tesseract
+layout: default
+title: Running Tesseract
+parent: Tigrinya OCR
+nav_order: 1
 ---
 # Running Tesseract for Tigrinya OCR

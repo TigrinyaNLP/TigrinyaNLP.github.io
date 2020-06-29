@@ -1,9 +1,8 @@
 ---
-layout: page
-nav_order: 2
+layout: default
 title: Research
-has_children: false
-permalink: /research
+parent: NLP resources
+nav_order: 1
 ---
 # Tigrinya NLP research
 

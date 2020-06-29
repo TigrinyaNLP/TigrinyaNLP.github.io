@@ -1,9 +1,8 @@
 ---
-layout: page
-nav_order: 3
-title: OCR
-has_children: true
-permalink: /ocr/intro
+layout: default
+title: Optical Character Recognition
+parent: Tigrinya OCR
+nav_order: 1
 ---
 # Tigrinya OCR
 

@@ -1,9 +1,8 @@
 ---
-layout: page
-nav_order: 2
-title: Corpus
-has_children: false
-permalink: /corpus
+layout: default
+title: Tigrinya Corpus
+parent: NLP resources
+nav_order: 1
 ---
 # Tigrinya Corpus
 
