@@ -10,7 +10,7 @@ permalink: /
 ---
 
 # Natural Language Processing for Tigrinya
-{: .fs-9 }
+{: .fs-8 }
 
 Improve the coverage of Tigrinya Language in the digital world.
 {: .fs-6 .fw-300 }
