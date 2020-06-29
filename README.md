@@ -1,2 +1,2 @@
-# jesmigel.github.io
-Blog
+# tigrinyanlp.github.io
+Website on Tigrinya NLP
