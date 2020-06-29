@@ -5,7 +5,7 @@ parent: Tigrinya OCR
 nav_order: 1
 ---
 # Tigrinya OCR
-
+---
 [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) technology is the conversion of image (scanned) documents into electronic editable text. OCR technology comes in many formats. For examples some printers can scan a document and save it as a word document ready to be edited. Most of this applications use underlying OCR engine which can be trained to recognize any character.
 
 OCR can be a relevant technology in Tigrinya Language. To name some of the use cases:

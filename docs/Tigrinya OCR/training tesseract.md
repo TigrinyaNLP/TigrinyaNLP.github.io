@@ -4,11 +4,42 @@ title: Training Tesseract
 parent: Tigrinya OCR
 nav_order: 3
 ---
-# Training Tesseract for Tigrinya OCR
+# Training Tesseract for Tigrinya
+--
+As discussed earlier the Tigrinya language-package that comes with Tesseract is descent. People can still use it AS IS with a bit of manual correction, you can have your scanned image into an editable format.
+ However for bigger documents, where you can not manually correct each page one by one. Such approach is not feasible. A more practical and permanent solution is to train Tesseract with more sample documents and
+ make it recognize Tigrinya characters more accurately.
 
-Now we are going to generate *.traineddata file which can later be loaded to Tesseract, so it can recognize characters the way we want it.
+  A more comprehensive documentation of Training Tesseract is available at [Tessract Doc](https://tesseract-ocr.github.io/tessdoc/).
+  We also find [this tutorial](https://pretius.com/how-to-prepare-training-files-for-tesseract-ocr-and-improve-characters-recognition/) useful quick start doc.
+   In this section we will quickly show the commands and files we use to train Tesseract for Tigrinya
 
-Run the following commands using 'box.train' config to create the .tr file.
+The final goal for this exercise is to generate tir.traineddata file (the language-package for Tigrinya) which can later be loaded to Tesseract, so it can recognize more characters the way we want it.
+
+## Generate box file
+
+First we need to run tesseract to generate a ‘box’ file. To do that - rename our test (or experiment) file according to the Tesseract experiment file naming convention, which is [language name].[font name].exp[number].[file extension].
+In our case we are using Abyssinica_SIL font, and our file will be named *tir.Abyssinica_SIL.exp1.tif*
+
+```
+tesseract tir.Abyssinica_SIL.exp1.tif tir.Abyssinica_SIL.exp1  batch.nochop makebox
+```
+This will produce a file called tir.Abyssinica_SIL.exp1.box
+
+## Edit Box file
+
+Open the box file using QT Box Editor. You should see something like the image below.
+
+The editor show all the Letters on the left side. Each letter has its own box (defined by the left, bottom, right and bottom coordinates).
+On the right side the image is displayed along with the box in green border. In this example we can see that ዕ,ራ,ፍ are correctly identified, however ም is recognized as ዖ and o.
+We can correct this by removing the box that has ‘o’, replacing ዖ with ም and stretching the first box to cover the entire ም as shown below.
+By doing this, we are preparing a training file for Tesseract, next time tesseract finds an image that looks like this, it will convert it to ም instead of ዖo. We will see on the next section how to train Tesseract.
+It is now time to feed the modified box file to Tesseract and generated new tir.tessdata which will be out new ‘improved’ language definition for Tigrinya.
+First lets generate a character set definition and shape table.
+
+## Generating training files
+
+Get one page tif image that contain a Tigrinya characters. Name it tir.Abyssinica_SIL.exp1.tif and un the following commands using 'box.train' flag to create the .tr file.
 
 ```
 tesseract -l tir tir.Abyssinica_SIL.exp1.tif tir.Abyssinica_SIL.exp1 nobatch box.train
