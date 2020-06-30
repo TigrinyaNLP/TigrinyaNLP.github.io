@@ -22,7 +22,7 @@ First we need to run tesseract to generate a ‘box’ file. To do that - rename
 In our case we are using Abyssinica_SIL font, and our file will be named *tir.Abyssinica_SIL.exp1.tif*
 
 ```
-tesseract tir.Abyssinica_SIL.exp1.tif tir.Abyssinica_SIL.exp1  batch.nochop makebox
+tesseract -l tir tir.Abyssinica_SIL.exp1.tif tir.Abyssinica_SIL.exp1  batch.nochop makebox
 ```
 This will produce a file called tir.Abyssinica_SIL.exp1.box
 
@@ -41,7 +41,6 @@ We can correct this by removing the box that has ‘o’, replacing ዖ with ም
 | ![Box file after editing](/img/qt2.png) |
 |:--:|
 | *Box file after editing* |
-
 
 By doing this, we are preparing a training file for Tesseract, next time tesseract finds an image that looks like this, it will convert it to ም instead of ዖo.
 It is now time to feed the modified box file back to Tesseract and generate few more files.
