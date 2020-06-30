@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /docs/about
+nav_order: 10
 ---
 # Daniel Network - Language Team
 ---
