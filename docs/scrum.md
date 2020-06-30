@@ -4,7 +4,7 @@ title: Scram
 permalink: /docs/scrum
 ---
 # Scram Board
-
+---
 ## July 2020
 - setup Tesseract on your local machine
 - Tesseract mastery

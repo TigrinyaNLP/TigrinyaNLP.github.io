@@ -4,7 +4,7 @@ title: Training Tesseract
 parent: Tigrinya OCR
 nav_order: 3
 ---
-# Training Tesseract for Tigrinya
+# Training Tesseract
 ---
 As discussed earlier the Tigrinya language-package that comes with Tesseract is descent. People can still use it AS IS with a bit of manual correction, you can have your scanned image into an editable format.
  However for bigger documents, where you can not manually correct each page one by one. Such approach is not feasible. A more practical and permanent solution is to train Tesseract with more sample documents and

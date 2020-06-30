@@ -4,7 +4,7 @@ title: About
 permalink: /docs/about
 ---
 # Daniel Network - Language Team
-
+---
 ## Goal
 - Improve the footprint of Tigrinya language in the digital world and serve the community.
 

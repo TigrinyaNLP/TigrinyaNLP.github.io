@@ -4,7 +4,7 @@ title: Running Tesseract
 parent: Tigrinya OCR
 nav_order: 2
 ---
-# Tesseract
+# Running Tesseract
 ---
 In this section we will discuss how to install and run tesseract using the built in language-package provided by Tesseract
 ## Installation
