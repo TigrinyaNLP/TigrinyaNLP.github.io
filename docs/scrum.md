@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Scram
+title: Scrum
 permalink: /docs/scrum
 ---
-# Scram Board
+# Scrum Board
 ---
 ## July 2020
 - setup Tesseract on your local machine
