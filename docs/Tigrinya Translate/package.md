@@ -6,11 +6,26 @@ nav_order: 3
 ---
 # Tigrinya Translate : Packaging
 ---
-Automatic Machine Translation is one of the applications of AI (Artificial Intelligence), or more specifically Neural Network. Like any other
-language, Tigrinya can also be translated from and to other languages using the same technology. What is required by native Tigrinya speakers is to train
-the network with enough sample language.
 
-In this section, we want to see 1) how we can train the network, 2) package the trained network and 3) run the final solution to do arbitrary task. This section
-uses Automatic translation as a way to demonstrate, how we can use AI technology for the benefit of Tigrinya. However the same technique can be used for other
-applications like Text-to-Speech, Speech-to-text, OCR or other AI based solutions. All AI based technologies can be adopted if one has the right amount of data to
-train, package and run the application.
+The trained model need to be packaged in certain ways to be usable. Save the following python command to package.py
+
+```
+from transformers import MarianMTModel, MarianTokenizer
+import os
+
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--checkpoint', type=str, help='latest checkpoint')
+args = parser.parse_args()
+
+NEW_DIR = "./Transformer_model"
+os.mkdir(NEW_DIR)
+model_name = args.checkpoint
+tokenizer = MarianTokenizer.from_pretrained(model_name)
+model = MarianMTModel.from_pretrained(model_name )
+model.eval()
+model.save_pretrained(NEW_DIR)
+tokenizer.save_pretrained(NEW_DIR)
+```
+
