@@ -1,6 +1,6 @@
 ---
 layout: default
-title: NLP resources
-nav_order: 4
+title: Tigrinya Translate
+nav_order: 2
 has_children: true
 ---
