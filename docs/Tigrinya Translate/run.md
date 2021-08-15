@@ -4,7 +4,7 @@ title: Running (Inference)
 parent: Tigrinya Translate
 nav_order: 3
 ---
-# Tigrinya Translate : Running the model for Inference
+# Running the model for Inference
 ---
 Running a trained model for inference is also CUP intensive process. Specially if it is supposed to work for multiple users at the same time.
 A best solution is to run it in Google Cloud as a docker contained with auto scaling. More information on this is available at

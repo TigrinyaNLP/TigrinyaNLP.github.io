@@ -4,7 +4,7 @@ title: Packaging
 parent: Tigrinya Translate
 nav_order: 3
 ---
-# Tigrinya Translate : Packaging
+# Packaging
 ---
 
 The trained model need to be packaged in certain ways to be usable. Save the following python command to package.py
