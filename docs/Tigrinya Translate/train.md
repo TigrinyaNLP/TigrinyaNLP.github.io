@@ -4,7 +4,7 @@ title: Data Collection and Training
 parent: Tigrinya Translate
 nav_order: 2
 ---
-# Tigrinya Translate : Data Collection and Training
+# Data Collection and Training
 ---
 * Embedding
 
@@ -28,8 +28,8 @@ mkdir output
 
 The data we need to train the above neural model is a list of English sentences translated to Tigrinya, sentence by sentence.
 Tigrinya Bible is a good example.
-you can download it from https://www.geezexperience.com/ai/data.gz and unzip it in the seq2seq direcory above.
- Read hugging face documentation to understand how training data is organized.
+you can download [en_ti-bible](https://www.tigrinyatranslate.com/en_ti-bible.zip), which is formatted for the seq2seq training above.
+unzip it examples/legacy/seq2seq directory.   Read hugging face documentation to understand how training data is organized.
 
  You can run the following command to start the training.
 ```
@@ -54,7 +54,7 @@ python3 finetune_trainer.py \
 --model_name_or_path "Helsinki-NLP/opus-mt-en-ti"
 ```
 Note that training a neural network model like this requires a lot of CPU power. A better computer is, one with a lot of GPU. A best solution
-if you do not have such computer is to sign up for AWS account and use P2.xlarge or p2.8xlarge instance. Read https://course.fast.ai/start_aws for more
-AWS for AI documentation.
+if you do not have such computer is to sign up for AWS account and use P2.xlarge or p2.8xlarge instance.
+Read [running in AWS](https://course.fast.ai/start_aws) for more documentation.
 
-Oce the trainer is done. The final output will be in the 'output' directory
+Once the trainer is done. The final output will be in the 'output' directory.
