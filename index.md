@@ -23,8 +23,13 @@ Tigrinya may not have the financial gain that these companies are looking for, a
 have to work a little harder to enjoy these technologies. Our software developers, linguistic experts and translators need to do most of the
 job that was normally done by companies like Google.
 
-The good news is that the majority of these products are built on top of artificial intelligence called Deep learning neural network.
-This technology does not need any change to make it work for Tigrinya, however it needs a lot of training data. In this page we try to document, what
-is already done by experts in this area, with the intention that we can all harmonize our efforts to the advancement of Tigrinya Language in the digital world
+The good news is that the majority of these products are built on top of artificial intelligence called Deep learning neural network. Until recently,
+Dep learning neural network was only run by university graduates and specially trained people. But now thanks to open source projects like
+[Hugging Face] (https://huggingface.co/transformers/), the technology has been easily accessible to people with basic knowledge of the domain.
+We can make use of these projects for Tigrinya, with no, or minimum code change. All we need is training data (a lot of it).
 
-This page is an initiative by Seret Foundation, language team. anyone is free to use without any limitation.
+In this page we try to document, what we are doing in this area. The intention is to harmonize our efforts in a collective manner,
+and give someone a starting point to implement all these cool technologies in Tigrinya.
+
+---
+This page is an initiative by Seret Foundation -language team. Anyone is free to use without any limitation.
