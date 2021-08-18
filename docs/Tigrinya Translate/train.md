@@ -28,8 +28,8 @@ mkdir output
 
 The data we need to train the above neural model is a list of English sentences translated to Tigrinya, sentence by sentence.
 Tigrinya Bible is a good example.
-you can download [en_ti-bible](https://www.tigrinyatranslate.com/en_ti-bible.zip), which is formatted for the seq2seq training above.
-unzip it examples/legacy/seq2seq directory.   Read hugging face documentation to understand how training data is organized.
+you can download [en_ti-bible](https://bible.geezexperience.com/tigrinya/download/en-ti-bible-training.zip), which is formatted for the seq2seq training above.
+unzip it on examples/legacy/seq2seq/data directory.   Read hugging face documentation to understand how training data is organized.
 
  You can run the following command to start the training on transformer version 4.3. Have a look at [Transformer Training documentation](https://huggingface.co/transformers/v4.3.0/main_classes/trainer.html#seq2seqtrainer)
  for upto date commands.

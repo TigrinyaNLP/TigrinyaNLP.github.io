@@ -7,7 +7,13 @@ nav_order: 10
 # Daniel Network - Language Team
 ---
 ## Goal
-- Improve the footprint of Tigrinya language in the digital world and serve the community.
+- Make Tigrinya and Tigrinya speakers the beneficiary of Language Technologies.
 
-## Method
-- 6 weeks iteration of collaborative work with small goals at a time
+## Members
+- Dr. Biniam Gebremichael
+- Ermias Zerazion
+- Simon Mebrahtu
+- Semere Habte
+- Kibreab B
+- Yosias Kiflu
+- Y6 weeks iteration of collaborative work with small goals at a time
