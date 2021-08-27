@@ -6,13 +6,13 @@ nav_order: 2
 ---
 # Data Directory
 ---
-### Tigrinya data resources for NLP training
+## Tigrinya data resources for NLP training
 
-#### Tigrinya Sentences
-Tigrinya sentences collected on internet. Mostly for 4 years of haddas Eritrea news letter
+### Tigrinya Sentences
+Tigrinya sentences collected on internet. Mostly from 4 years of Haddas Ertra news letter
 - [Download](https://github.com/TigrinyaNLP/corpus/blob/main/crawler/tigrinya_sentences.zip)
 
-#### Tigrinya Translation
+### Tigrinya Translation
 Sentence to Sentence translation from English to Tigrinya from the Bible. The English verses is taken from the
 bible version closest to Tigrinya Bible. Which is World English Bible (WEB) version. This gives better translation accuracy than other versions such as KJV.
 - [Download](https://github.com/TigrinyaNLP/corpus/blob/main/translation/en-ti-bible.zip)
