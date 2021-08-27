@@ -32,7 +32,7 @@ remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 aux_links:
-  "Just the Docs on GitHub":
+  "Open project in GitHub":
     - "//github.com/TigrinyaNLP"
 # Exclude from processing.
 # The following items will not be processed, by default.
