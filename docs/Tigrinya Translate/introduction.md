@@ -7,7 +7,7 @@ nav_order: 1
 # Tigrinya Translate using Machine learning
 ---
 
-## This section is under development. The document might be hard to read**
+### This section is under development. Apologies if some parts are hard to read.
 
 Automatic Machine Translation is one of the applications of AI (Artificial Intelligence), or more specifically Neural Network. Like any other
 language, Tigrinya can also be translated from and to other languages using the same technology. What is required by native Tigrinya speakers is to train
