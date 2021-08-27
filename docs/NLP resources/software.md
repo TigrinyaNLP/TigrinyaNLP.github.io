@@ -1,11 +1,18 @@
 ---
 layout: default
-title: Software
+title: Data Directory
 parent: NLP resources
-nav_order: 3
+nav_order: 2
 ---
-# Software
+# Data Directory
 ---
-### Interesting Software and Mobile Apps Specific to Tigrinya NLP
+### Tigrinya data resources for NLP training
 
-TBD
+# Tigrinya Sentences
+- Tigrinya sentences collected on internet. Mostly for 4 years of haddas Eritrea news letter
+-- [Download](https://github.com/TigrinyaNLP/corpus/blob/main/crawler/tigrinya_sentences.zip)
+# Tigrinya Translation
+-- Sentence to Sentence translation from English to Tigrinya from the Bible. The English verses is taken from the
+bible version closest to Tigrinya Bible. Which is World English Bible (WEB) version. This gives better translation accuracy than other versions such as KJV.
+-- [Download](https://github.com/TigrinyaNLP/corpus/blob/main/translation/en-ti-bible.zip)
+-- used in Hugging Face translation model [en-ti-translate](https://huggingface.co/Biniam/en_ti_translate)
