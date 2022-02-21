@@ -4,10 +4,10 @@ title: About
 permalink: /docs/about
 nav_order: 10
 ---
-# Daniel Network - Language Team
+# SeReT Foundation - Language Team
 ---
 ## Goal
-- Make Tigrinya and Tigrinya speakers the beneficiary of Language Technologies.
+- Improving Tigrinya's footprint in the digital world.
 
 ## Members
 - Dr. Biniam Gebremichael
@@ -16,6 +16,7 @@ nav_order: 10
 - Semere Habte
 - Kibreab B
 - Yosias Kiflu
+- Dr. Tadesse Zemicheal
 
 ## Join
 - Are you a programmer, computer savvy, NLP researcher/student, linguists... and you want to work in advancing Tigrinya technologically?
