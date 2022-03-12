@@ -16,4 +16,4 @@ nav_order: 1
 1. separate language-detector.jar is built to support Tigrinya language detection
 2. latinScript=false
 3. ignoreUpperCase=false
-4. fsa.type=NONE
+4. fsa.type = NONE
