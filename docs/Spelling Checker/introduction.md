@@ -19,16 +19,16 @@ words by themselves. It only becomes incorrect when they are used one after the 
 | *Tigrinya LanguageTool in Microsoft Word* |
 
 
-##Spelling Checker
+## Spelling Checker
 
 The Hunspell dictionary is based on the words crawled from internet by [Biniam](https://www.cs.ru.nl/~biniam/geez/) and [Fitsum](https://github.com/fgaim/Tigrinya-WordCount)
 The dictionary has over half a million unique words that appeared on Internet more than once on different document. This list does have errors, but the incorrect words have low
 frequency, which means if they are suggested, they will be ranked low on the suggestion list.
 
-Language Tool also supports POS taggers and word2vec embedding with can farther improve the quality of the spelling checker.
+Language Tool also supports POS taggers and word2vec embedding which can farther improve the quality of the spelling checker.
 
 
-##Grammar Checker
+## Grammar Checker
 Grammar rules can be specified in an xml format file named 'grammar.xml'. For example the above rule for 'ቤት ክርስትያን' can be specified as following
 
 ```
@@ -46,7 +46,7 @@ In a simple word this means 'if ቤት or በት is followed by መቕደስ or 
 creation is defined [here](https://dev.languagetool.org/development-overview). For example for English there are about 500 rules defined this
 way. We are looking for help in adding similar rules for Tigrinya. Let us know if you help.
 
-##Development Environment
+## Development Environment
 
 
 
