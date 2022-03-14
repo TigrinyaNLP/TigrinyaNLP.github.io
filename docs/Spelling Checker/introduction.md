@@ -31,7 +31,7 @@ Language Tool also supports POS taggers and word2vec embedding which can farther
 ## Grammar Checker
 Grammar rules can be specified in an xml format file named 'grammar.xml'. For example the above rule for 'ቤት ክርስትያን' can be specified as following
 
-```
+```xml
             <rule>
                 <pattern>
                     <marker>
