@@ -9,7 +9,7 @@ nav_order: 1
 [LanguageTool](https://languagetool.org/) is an open-source spelling and grammar checker. Very much similar to Grammarly.
 The tool already supports many languages but not yet Tigrinya. This page is dedicated to Tigrinya support in LanguageTool
 
-LanguageTool has two parts. 1) the spelling checker based on OpenOffice spell checker called Hunspell. 2)Grammar checker based on grammatical rules. For example, replacing
+LanguageTool has two parts. 1) Spell checker based on OpenOffice spell checker called Hunspell. 2) Grammar checker based on grammatical rules. For example, replacing
 አስምዐ with ኣስምዐ is a spelling check correction. However replacing ቤት ክርስትያን to ቤተ ክርስትያን is a grammatical correction, because it not a one word rule, plus both ቤት and ክርስትያን are correct
 words by themselves. It only becomes incorrect when they are used one after the other.
 
