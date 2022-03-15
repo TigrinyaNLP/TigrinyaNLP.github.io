@@ -20,7 +20,7 @@ LanguageTool has a plug in for chrome, Microsoft Word, websites and many more. I
 
 Alternatively, the spell check can also work on a website like below. Or through a Chrome plugin
 
-| ![LanguageTool in Word](/img/spelling_web.png) |
+| ![LanguageTool in Browser](/img/spelling_web.png) |
 |:--:|
 | *Tigrinya LanguageTool in browser* |
 
