@@ -10,16 +10,24 @@ nav_order: 1
 The tool already supports many languages but not yet Tigrinya. This page is dedicated to Tigrinya support in LanguageTool.
 
 LanguageTool has a plug in for chrome, Microsoft Word, websites and many more. Integrating Tigrinya to LangaugeTool will
-  allow us to use these plug ins without modification.
+  allow us to use these plug-ins without modification.
 
-LanguageTool has two parts. 1) Spell checker based on OpenOffice spell checker called Hunspell. 2) Grammar checker based on grammatical rules. For example, replacing
-አስምዐ with ኣስምዐ is a spelling check correction. However replacing ቤት ክርስትያን to ቤተ ክርስትያን is a grammatical correction, because it not a one word rule, plus both ቤት and ክርስትያን are correct
-words by themselves. It only becomes incorrect when they are used one after the other.
 
 
 | ![LanguageTool in Word](/img/spelling_word.PNG) |
 |:--:|
 | *Tigrinya LanguageTool in Microsoft Word* |
+
+Alternatively, the spell check can also work on a website like below. Or through a Chrome plugin
+
+| ![LanguageTool in Word](/img/spelling_web.png) |
+|:--:|
+| *Tigrinya LanguageTool in browser* |
+
+
+LanguageTool has two parts. 1) Spell checker based on OpenOffice spell checker called Hunspell. 2) Grammar checker based on grammatical rules. For example, replacing
+አስምዐ with ኣስምዐ is a spelling check correction. However replacing ቤት ክርስትያን to ቤተ ክርስትያን is a grammatical correction, because it not a one word rule, plus both ቤት and ክርስትያን are correct
+words by themselves. It only becomes incorrect when they are used one after the other.
 
 
 ### 1. Spelling Checker
