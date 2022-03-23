@@ -10,11 +10,32 @@ nav_order: 2
 is built on a separate repository. Once the support is fully implemented, we will do a 'pull request' for LanguageTool
 developers to merge our repository to the main source.
 
-## DEV Environment
+## Build from Source
 
-During the development phase, we will maintain our DEV API environment
-at [spell.tigrinyadictionary.com](https://spell.tigrinyadictionary.com/).  Use the
-[API documentation](https://languagetool.org/http-api/swagger-ui/#/default) to properly query the API
+There are 2 things to build
+1. Build LanguageTool source code
+2. Build HunSpell dictionary into LanguageTool compatible (Morfologik) dictionary. This is done when ever we add or remove a word from the main dictionary
+
+### 1. Build LanguageTool source code
+To build Tigrinya Language Tool from source you will need maven and git installed in your system.
+An easier approach is to build it in Ubuntu, either on a Linux machine or on WSL 2 in Windows.
+
+```cli
+sudo apt install maven
+sudo apt install git
+git clone https://github.com/TigrinyaNLP/languagetool.git
+cd languagetool
+./build.sh languagetool-standalone package -DskipTests
+```
+
+### 2. Build Tigriya HunSpell dictionary
+
+If you change any of the following files: ti_ER.dic,ti_ER_wordlist.xml and ti_ER.info you can compile a new ti_ER.dict using the following command
+
+```cli
+[languagetool]$ sh languagetool-language-modules/ti/src/main/resources/org/languagetool/resource/ti/hunspell/create_dict.sh ti ER
+```
+You can test the compiled version by running (uncomment) the last two lines in create_dict.sh
 
 ## Language Detector
 
@@ -28,6 +49,12 @@ the default language-detector.jar that comes from the maven repository.
 The main Tigrinya codes and files are available under [languagetool-language-modules](https://github.com/TigrinyaNLP/languagetool/tree/master/languagetool-language-modules/ti). This
 directory contains Hunspell files and grammar.xml.
 
+
+## DEV Environment
+
+During the development phase, we will maintain our DEV API environment
+at [spell.tigrinyadictionary.com](https://spell.tigrinyadictionary.com/).  Use the
+[API documentation](https://languagetool.org/http-api/swagger-ui/#/default) to properly query the API
 
 
 ### Important
