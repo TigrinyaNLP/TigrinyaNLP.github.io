@@ -6,7 +6,7 @@ nav_order: 3
 ---
 # Deploying LanguageTool for Tigrinya
 ---
-The deployment of LT for Tigrinya located at [spell.tigrinyadictionary.com](https://spell.tigrinyadictionary.com) is 
+The deployment of LT for Tigrinya located at [spell.tigrinyadictionary.com/v2/languages](https://spell.tigrinyadictionary.com) is 
 deplyed as a docker container with the following parameters. Use this page, 
 if you like to deploy similar server yourself. 
 
