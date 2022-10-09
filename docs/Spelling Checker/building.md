@@ -28,21 +28,23 @@ cd languagetool
 ./build.sh languagetool-standalone package -DskipTests
 ```
 
-### 2. Build Tigriya HunSpell dictionary
-
-If you change any of the following files: ti_ER.dic,ti_ER_wordlist.xml and ti_ER.info you can compile a new ti_ER.dict using the following command
-
-```cli
-[languagetool]$ sh languagetool-language-modules/ti/src/main/resources/org/languagetool/resource/ti/hunspell/create_dict.sh ti ER
-```
-You can test the compiled version by running (uncomment) the last two lines in create_dict.sh
-
 ## Language Detector
 
 LanguageTool has a dependency to language-detector-0.6.jar. The detector is used to detect the language of a source text (mostly when a user does not specify the language).
 However the detector does not support Tigrinya. To fix this we have [forked the source code](https://github.com/TigrinyaNLP/language-detector) and added Tigrinya support.
 The compiled language-detector.jar is available [here for download](https://github.com/TigrinyaNLP/language-detector/releases/tag/language-detector-0.6) use this instead of
 the default language-detector.jar that comes from the maven repository.
+
+
+### 2. Build Tigriya HunSpell dictionary
+
+This step is only required if you have made changes to the dictionary. If you change any of the following files: ti_ER.dic,ti_ER_wordlist.xml and ti_ER.info you can compile a new ti_ER.dict using the following command
+
+```cli
+[languagetool]$ sh languagetool-language-modules/ti/src/main/resources/org/languagetool/resource/ti/hunspell/create_dict.sh ti ER
+```
+You can test the compiled version by running (uncomment) the last two lines in create_dict.sh
+
 
 ## Tigrinya Files
 
