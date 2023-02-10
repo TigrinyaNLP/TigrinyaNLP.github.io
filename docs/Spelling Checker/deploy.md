@@ -53,7 +53,7 @@ languageClasses=org.languagetool.language.Tigrinya
 languageClasses=org.languagetool.language.Tigre
 
 ```
-Optionally, it is possible to attache database connection, if you want to allow personal dictionary based on user name and apikey. To do this create a file languagetool.config with the following properties for MySQL based database and add  '--config languagetool.config' at the end of the java process
+Optionally, it is possible to attach database connection, if you want to allow personal dictionary based on user name and apikey. To do this create a file languagetool.config with the following properties for MySQL based database and add  '--config languagetool.config' at the end of the java process
 
 ```
 maxTextLength=20000
