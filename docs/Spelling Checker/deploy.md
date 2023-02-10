@@ -53,6 +53,8 @@ languageClasses=org.languagetool.language.Tigrinya
 languageClasses=org.languagetool.language.Tigre
 
 ```
+
+## User Management
 Optionally, it is possible to attach database connection, if you want to allow personal dictionary based on user name and apikey. To do this create a file languagetool.config with the following properties for MySQL based database and add  '--config languagetool.config' at the end of the java process
 
 ```
@@ -63,8 +65,9 @@ dbPassword=xxxxx
 dbUrl=jdbc:mysql://localhost:3306/languagetool
 
 ```
+In the database 'languagetool' there should be atleast to tables. Namely 'users' and 'ignore_words'. The users table would contain at minimum user id,email and api_key. While the ignore_word would contain user_id and ignore_word fields. These list all ignored words by that user. This way users can use their email and api_key when interacting with languagetool. LanguageTool does not have a functionality to create users or create api_key. You can use other applications to populate the users table. 
 
-
+## Docker image
 Docker image can be built and run using these commands
 
 ```
