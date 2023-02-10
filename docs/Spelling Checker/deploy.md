@@ -44,7 +44,7 @@ EXPOSE 8010
 
 The file META-INF/org/languagetool/language-module.properties comes with all languages, but for our deployment we only
 limit it to Tigrinya and Tigre as below. The spanish,Catalan and Portuguese are added since they are referred in LT code.
-LT will not start without this line.
+it will not start without these three languages enabled.
 
 
 ```
@@ -53,6 +53,17 @@ languageClasses=org.languagetool.language.Tigrinya
 languageClasses=org.languagetool.language.Tigre
 
 ```
+Optionally, it is possible to attache database connection, if you want to allow personal dictionary based on user name and apikey. To do this create a file languagetool.config with the following properties for MySQL based database and add  '--config languagetool.config' at the end of the java process
+
+```
+maxTextLength=20000
+dbDriver=org.mariadb.jdbc.Driver
+dbUsername=languagetool
+dbPassword=xxxxx
+dbUrl=jdbc:mysql://localhost:3306/languagetool
+
+```
+
 
 Docker image can be built and run using these commands
 
