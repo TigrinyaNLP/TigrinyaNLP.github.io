@@ -42,13 +42,14 @@ Run the followinf command to synthesis an audio wav file for the sentence.
 # text to audio 
 espeak-ng  -v ti "ዛንትኡ ግና ነዊሕ እዩ።" --stdout -w audio.wav
 ```
-You can now listen to the [audio](audio/espeak-test.wav) file from any audio player. 
+You can now listen to the [audio](/audio/espeak-test.wav) file from any audio player. 
 The sound is not human, this is just a computerized audio. On the next section we will make use of it and
-[improve the audio](audio/piper.wav) using Piper
+[improve the audio](/audio/piper.wav) using Piper
 
 ## Compile Tigrinya espeak-ng dictionary
 
 The main phonemic rule for Tigrinya is stored in [ti_rules](https://github.com/TigrinyaNLP/espeak-ng/blob/master/dictsource/ti_rules) file.
 Here it describes which Tigrinya letter corresponds to which ascii-IPA representation. Sometimes words can sound different, 
-depending on if they are at the beginning or in the middle or at the end of a word. This difference can be expressed in espeak-ng.
-See extensive documentation at https://github.com/TigrinyaNLP/espeak-ng/blob/master/docs/dictionary.md#rules.
+depending on if they are at the beginning or in the middle or at the end of a word. 
+This difference can be expressed in espeak-ng. See extensive documentation 
+[here](https://github.com/TigrinyaNLP/espeak-ng/blob/master/docs/dictionary.md#rules).
