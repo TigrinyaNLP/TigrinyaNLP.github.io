@@ -32,4 +32,4 @@ In this page we try to document, what we are doing in this area. The intention i
 and give someone a starting point to implement all these cool technologies in Tigrinya.
 
 ---
-This page is an initiative by Seret Foundation -language team. Anyone is free to use without any limitation.
+This page is an initiative by SERET Foundation -language team. Anyone is free to use without any limitation.
