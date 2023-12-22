@@ -1,7 +1,7 @@
 ---
 layout: default
-title: espeak-ng
-parent: Tigrinya Phonemize
+title: Tigrinya Phonemize
+parent: Tigrinya TTS
 nav_order: 1
 ---
 # Tigrinya TTS
