@@ -4,7 +4,7 @@ title: Tigrinya Phonemizer
 parent: Tigrinya TTS
 nav_order: 1
 ---
-# Tigrinya TTS
+# Tigrinya Phonemizer
 ---
 
 The [eSpeak NG](https://github.com/TigrinyaNLP/espeak-ng) is open source software text-to-speech synthesizer. 
