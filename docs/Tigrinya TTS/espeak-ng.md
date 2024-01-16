@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tigrinya Phonemize
+title: Tigrinya Phonemizer
 parent: Tigrinya TTS
 nav_order: 1
 ---
@@ -25,9 +25,10 @@ The first release of Tigrinya dictionary for espeak-ng available [here](https://
 You can use it by installing espeak-ng and copy it the dictionary where espeak-ng-data is installed.
 ```
 yum install espeak-ng
-espeak-ng --version #note the location of espeak-ng-data 
-wget https://github.com/TigrinyaNLP/espeak-ng/releases/download/tigrinya1.0/ti_dict
-cp ti_dict   /usr/lib/x86_64-linux-gnu/espeak-ng-data
+espeak-ng --version # note the location of espeak-ng-data  (eg /usr/lib/espeak-ng-data)
+rm -rf /usr/lib/espeak-ng-data
+wget https://github.com/TigrinyaNLP/espeak-ng/releases/download/espeak-ng-data-plus-ti_1.0/espeak-ng-data.zip
+unzip espeak-ng-data.zip  -d /usr/lib/
 ```
 
 ## Using espeak-ng
@@ -37,7 +38,7 @@ You can run espeak-ng to convert Tigrinya words to their phoneme representation 
 espeak-ng  -v ti "ዛንትኡ ግና ነዊሕ እዩ።" -qx
  > z,anyt'y?u g'yna n'@wiC ?'yju
 ```
-Run the followinf command to synthesis an audio wav file for the sentence.
+Run the following command to synthesis an audio wav file for the sentence.
 ```
 # text to audio 
 espeak-ng  -v ti "ዛንትኡ ግና ነዊሕ እዩ።" --stdout -w audio.wav
@@ -53,3 +54,12 @@ Here it describes which Tigrinya letter corresponds to which ascii-IPA represent
 depending on if they are at the beginning or in the middle or at the end of a word. 
 This difference can be expressed in espeak-ng. See extensive documentation 
 [here](https://github.com/TigrinyaNLP/espeak-ng/blob/master/docs/dictionary.md#rules).
+
+You can clone,edit and compile espeak-ng using this commands
+```
+git clone https://github.com/TigrinyaNLP/espeak-ng.git
+cd espeak-ng 
+sh autogen.sh
+sh configure --prefix=/usr
+make
+```
