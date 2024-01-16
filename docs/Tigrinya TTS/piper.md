@@ -72,6 +72,8 @@ CMD ["start.sh"]
 Store your training data in ~/data/ directory. You will need your a [base model]((https://huggingface.co/datasets/rhasspy/piper-checkpoints/resolve/main/en/en_US/lessac/low/epoch%3D2307-step%3D558536.ckpt)),
 [espeak-ng-data](https://github.com/TigrinyaNLP/espeak-ng/releases/download/espeak-ng-data-plus-ti_1.0/espeak-ng-data.zip) and training data.
 
+We trained on AWS G5.xlarge the training for 10000 ephos, it took 3 days (about $150). On a gaming machine with RTX3080 and 12GB ram GPU, it takes 6 weeks.
+
 # Testing model
 First install piper phonemizer command line
 ```
@@ -84,7 +86,8 @@ Use these commands to generate audio while the model is being trained
 ```
 echo "ናብ ውሽጢ ቤት መደቀሲኣ ተቓላጢፋ።" | piper_phonemize -l ti \ 
     --espeak-data $ESPEAK_NG_DATA --allow_missing_phonemes | python3.9 \
-    -m piper_train.infer --sample-rate 22050 --checkpoint $TRAIN/lightning_logs/version_0/checkpoints/*.ckpt \
+    -m piper_train.infer \ 
+    --sample-rate 22050 --checkpoint $TRAIN/lightning_logs/version_0/checkpoints/*.ckpt \
     --output-dir $OUTPUT
 ```
 
@@ -92,45 +95,7 @@ TODO (piper_train.infer requires piper python environment outside docker). Work 
 
 # Export
 ```
-python3.9 -m piper_train.export_onnx train-ti/lightning_logs/version_0/checkpoints/epoch=3015-step=875444.ckpt  train-ti/tiPiper.onnx
+python3.9 -m piper_train.export_onnx \
+            train-ti/lightning_logs/version_0/checkpoints/epoch=3015-step=875444.ckpt \
+            train-ti/tiPiper.onnx
 ```
-
-# Web based inferer
-
-Piper is mainly made for an offline application to be installed on local device. Usually Audio synthesis takes from few seconds to minutes, 
-depending on the size of the text. Nevertheless, it can also run as a webserver on a remote server, using the builtin httpserver.
-
-use this Dockerfile to create an inferer image and deploy it on a host that can be accessible via http.
-
-```
-
-FROM pytorch/torchserve:latest-cpu
-
-RUN apt-get update && apt-get install -y apt-transport-https   git   python3.9 python3.9-venv     espeak-ng 
-RUN  apt-get install -y python3-pip  
-
-RUN pip install --upgrade pip
-
-RUN git clone https://github.com/rhasspy/piper.git
-
-# copy model artifacts, custom handler and other dependencies
-COPY ./model/tiPiper.onnx /home/model-server/
-COPY ./model/config.json /home/model-server/config.json
-COPY ./model/config.json /home/model-server/tiPiper.onnx.json
-RUN rm -rf /home/venv/lib/python3.9/site-packages/piper_phonemize/espeak-ng-data
-COPY ./model/espeak-ng-data.tgz /home/model-server/ 
-RUN tar -xf /home/model-server/espeak-ng-data.tgz -C /home/venv/lib/python3.9/site-packages/piper_phonemize/ 
-RUN rm -rf  /home/model-server/espeak-ng-data.tgz 
-WORKDIR "/home/model-server/piper/src/python_run"
-RUN pip3 install -r requirements.txt
-RUN pip3 install -r requirements_http.txt
-
-
-# expose health and prediction listener ports from the image
-EXPOSE 5000 
-
-CMD ["python3", \
-"-m", \
-"piper.http_server", \
-"--model", \
-"/home/model-server/tiPiper.onnx"]
