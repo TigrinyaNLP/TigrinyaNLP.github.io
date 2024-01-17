@@ -8,7 +8,8 @@ nav_order: 1
 ---
 
 The [eSpeak NG](https://github.com/TigrinyaNLP/espeak-ng) is open source software text-to-speech synthesizer. 
-eSpeak NG uses a "formant synthesis" method. This allows many law-resource languages to make use of IPA 
+eSpeak NG uses a "formant synthesis" method. This allows many law-resource languages to make use of 
+[IPA](https://en.wikipedia.org/wiki/Help:IPA/Tigrinya)  
 phonemization as a base for text-to-speech synthesizer. 
 
 Combining the eSpeak NG formant synthesis and HuggingFace's AI based synthesis, will create high quality TTS 
