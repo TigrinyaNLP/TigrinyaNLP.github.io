@@ -12,7 +12,7 @@ permalink: /
 # Natural Language Processing for Tigrinya
 {: .fs-8 }
 
-Improve the coverage of Tigrinya Language in the digital world.
+Empower Tigrinya speakers with AI-driven technology.
 {: .fs-6 .fw-300 }
 ---
 We are all familiar with applications like automatic translation, speech recognition, optical character recognition (OCR), and other technologies.

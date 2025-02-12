@@ -7,15 +7,15 @@ nav_order: 10
 # SeReT Foundation - Language Team
 ---
 ## Goal
-- Improving Tigrinya's footprint in the digital world.
+- **Strengthening Tigrinya’s digital presence. Empower its speakers with AI-driven technology.**  By developing language processing tools, machine translation systems, speech recognition, and other AI-powered applications, we can bridge the digital gap and ensure Tigrinya remains relevant in the modern technological landscape. Expanding digital resources in Tigrinya will not only enhance accessibility and communication but also foster innovation, inclusion, and cultural preservation for future generations. 
 
 ## Members
 - Dr. Biniam Gebremichael
-- Ermias Zerazion
-- Simon Mebrahtu
-- Semere Habte
-- Kibreab Yohannes
-- Yosias Kiflu
+- Eng. Ermias Zerazion
+- Eng. Simon Mebrahtu
+- Eng. Semere Habte
+- Eng. Kibreab Yohannes
+- Eng. Yosias Kiflu
 - Dr. Tadesse Zemicheal
 
 
