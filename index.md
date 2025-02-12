@@ -15,21 +15,24 @@ permalink: /
 Improve the coverage of Tigrinya Language in the digital world.
 {: .fs-6 .fw-300 }
 ---
-We are all familiar with applications like automatic translation, speech recognition, siri, optical character recognition (OCR), and other technologies.
+We are all familiar with applications like automatic translation, speech recognition, optical character recognition (OCR), and other technologies.
 We know how useful they are in our daily life. Unfortunately, they are not readily available for minority languages like Tigrinya.
 
-Relying on commercial companies like Google, Microsoft for this type of service in Tigrinya might be a long wait.
-Tigrinya may not have the financial gain that these companies are looking for, atleast not yet. This means Tigrinya speakers
-have to work a little harder to enjoy these technologies. Our software developers, linguistic experts and translators need to do most of the
-job that was normally done by companies like Google.
+Relying on commercial companies like Google and Microsoft to fully support Tigrinya on their product suite , could mean a long wait. 
+Since Tigrinya may not currently offer the financial incentives these companies seek. 
+As a result, Tigrinya speakers must take the initiative to advance these technologies themselves. Our software developers, 
+linguistic experts, and translators will need to handle much of the work that was typically undertaken by large companies like Google or government insitiutes.
 
 The good news is that the majority of these products are built on top of artificial intelligence called Deep learning neural network. Until recently,
 Dep learning neural network was only run by university graduates and specially trained people. But now thanks to open source projects like
-[Hugging Face] (https://huggingface.co/transformers/), the technology has been easily accessible to people with basic knowledge of the domain.
-We can make use of these projects for Tigrinya, with no, or minimum code change. All we need is training data (a lot of it).
+[Hugging Face](https://huggingface.co/transformers/), [Llama](https://www.llama.com/) to name a few; The technology has been accessible to people with less knowledge or resources.
+We can make use of these projects for Tigrinya without breaking the bank. But we do need training data.
 
-In this page we try to document, what we are doing in this area. The intention is to harmonize our efforts in a collective manner,
-and give someone a starting point to implement all these cool technologies in Tigrinya.
+In this page we have outlined, what we are doing on various NLP space. The intention is to harmonize our efforts in a collective manner,
+and give someone a starting base to adopt Tigrinya in the AI world.
 
 ---
-This page is an initiative by SERET Foundation -language team. Anyone is free to use without any limitation.
+## Who are we?
+
+[We are](/docs/about) a group of Tigrinya-speaking software engineers and language enthusiast collaborating under SERET Foundation - language team. [SERET Foundation](https://www.seretfoundation.org/) is a larger 
+groups of professionals with a vision to Empowered Lives and Communities.
