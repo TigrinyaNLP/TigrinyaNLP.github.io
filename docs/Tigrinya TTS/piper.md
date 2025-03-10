@@ -87,7 +87,7 @@ Use these commands to generate audio while the model is being trained
 echo "ናብ ውሽጢ ቤት መደቀሲኣ ተቓላጢፋ።" | piper_phonemize -l ti \ 
     --espeak-data $ESPEAK_NG_DATA --allow_missing_phonemes | python3.9 \
     -m piper_train.infer \ 
-    --sample-rate 22050 --checkpoint $TRAIN/lightning_logs/version_0/checkpoints/*.ckpt \
+    --sample-rate 16000 --checkpoint $TRAIN/lightning_logs/version_0/checkpoints/*.ckpt \
     --output-dir $OUTPUT
 ```
 
