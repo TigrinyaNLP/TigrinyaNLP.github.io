@@ -15,7 +15,7 @@ permalink: /
 Empower Tigrinya speakers with AI-driven technology.
 {: .fs-6 .fw-300 }
 
-## [Official Partner with UNESCO and Meta AI Technology](/img/unesco-meta-AI-languages.png)
+[![Official Partner with UNESCO and Meta AI Technology](/img/unesco-meta-AI-languages.png)](https://about.fb.com/news/2025/02/announcing-language-technology-partner-program/)
 
 
 ---
