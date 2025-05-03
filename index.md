@@ -14,6 +14,10 @@ permalink: /
 
 Empower Tigrinya speakers with AI-driven technology.
 {: .fs-6 .fw-300 }
+
+## partnering with [img/unesco-meta-AI-languages.png](https://about.fb.com/news/2025/02/announcing-language-technology-partner-program/)
+
+
 ---
 We are all familiar with applications like automatic translation, speech recognition, optical character recognition (OCR), and other technologies.
 We know how useful they are in our daily life. Unfortunately, they are not readily available for minority languages like Tigrinya.
