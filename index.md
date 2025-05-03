@@ -15,7 +15,7 @@ permalink: /
 Empower Tigrinya speakers with AI-driven technology.
 {: .fs-6 .fw-300 }
 
-[![Official Partner with UNESCO and Meta AI Technology](/img/unesco-meta-AI-languages.png)](https://about.fb.com/news/2025/02/announcing-language-technology-partner-program/)
+##Official Partner with [![UNESCO and Meta AI Technology](/img/unesco-meta-AI-languages.png)](https://about.fb.com/news/2025/02/announcing-language-technology-partner-program/)
 
 
 ---
@@ -25,10 +25,10 @@ We know how useful they are in our daily life. Unfortunately, they are not readi
 Relying on commercial companies like Google and Microsoft to fully support Tigrinya on their product suite , could mean a long wait. 
 Since Tigrinya may not currently offer the financial incentives these companies seek. 
 As a result, Tigrinya speakers must take the initiative to advance these technologies themselves. Our software developers, 
-linguistic experts, and translators will need to handle much of the work that was typically undertaken by large companies like Google or government insitiutes.
+linguistic experts, and translators will need to handle much of the work that was typically undertaken by large companies like Google or government institutes.
 
 The good news is that the majority of these products are built on top of artificial intelligence called Deep learning neural network. Until recently,
-Dep learning neural network was only run by university graduates and specially trained people. But now thanks to open source projects like
+Deep learning neural network was only run by university graduates and specially trained people. But now thanks to open source projects like
 [Hugging Face](https://huggingface.co/transformers/), [Llama](https://www.llama.com/) to name a few; The technology has been accessible to people with less knowledge or resources.
 We can make use of these projects for Tigrinya without breaking the bank. But we do need training data.
 
