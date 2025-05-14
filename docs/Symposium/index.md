@@ -6,8 +6,7 @@ has_children: true
 ---
 
 # Tigrinya Digital Initiatives
-
-#
+ 
 
 [SeReT Foundation](https://www.seretfoundation.org/) Language Team  together with :
 1. [USLA Institute for Digital Research & Education](https://idre.ucla.edu/),
