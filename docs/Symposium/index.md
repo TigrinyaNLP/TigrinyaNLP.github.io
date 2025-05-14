@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tigrinya Symposium
+title: UCLA Tigrinya Symposium
 nav_order: 11
 has_children: true
 ---
